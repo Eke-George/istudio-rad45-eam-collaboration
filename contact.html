@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=500, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -19,43 +19,48 @@
     </style>
 </head>
 <body class=" ">
-   <div class="w-full  bg-[url(image/backgroung-image.jpeg)] bg-cover bg-center bg-no-repeat h-[60vh] max-md:w-full max-md:h-[50vh] max-md:box-border m-0 p-0 flex flex-col items-center justisfy-center">
-        <header class="w-full h-[25%] text-black flex justify-center max-w-[1350px] mx-auto px-[10px]">
-       <div class="w-[85%] h-full flex justify-between items-center border-b-2 border-white"> 
-            <a href="" class="logo text-[40px]">iSTUDIO</a>
+   <div class="w-full  bg-[url('/images/our-bg.jpg')] bg-cover bg-center bg-no-repeat">
+        <header class="w-screen h-[98px] text-black  flex justify-center max-w-[90vw] mx-auto px-[10px]">
+       <div class="w-full h-full flex justify-between items-center border-b-2 border-white">
+        
+        <a href="" class="logo text-[40px]">iSTUDIO</a>
         <nav class=" flex gap-8 max-[791px]:hidden">
-            <a class="hover:text-green-600 text-[18px]" href="">Home</a>
-            <a class="hover:text-green-600 text-[18px]" href="">About</a>
-            <a class="hover:text-green-600 text-[18px]" href="">Service</a>
-            <a class="hover:text-green-600 text-[18px]" href="">Projects</a>
+            <a class="hover:text-green-600 text-[18px]" href="index.html">Home</a>
+            <a class="hover:text-green-600 text-[18px]" href="about.html">About</a>
+            <a class="hover:text-green-600 text-[18px]" href="service.html">Service</a>
+            <a class="hover:text-green-600 text-[18px]" href="project.html">Projects</a>
             <div class="dropdown-container relative">
                 <a href="" class="hover:text-green-600 text-[18px]">Pages <i class="bi bi-chevron-down"></i></a>
                 <div class="dropdown flex-col gap-8 absolute top-8 py-2 bg-gray-300 ml-[-15px] pl-4 pr-8">
-                    <a href="" class="hover:bg-green-700">Features</a>
-                    <a href="" class="hover:bg-green-700">Our Team</a>
-                    <a href="" class="hover:bg-green-700">Testimonial</a>
-                    <a href="" class="hover:bg-green-700">404 Page</a>
+                    <a href="features.html" class="hover:bg-green-700">Features</a>
+                    <a href="team.html" class="hover:bg-green-700">Our Team</a>
+                    <a href="testimonial.html" class="hover:bg-green-700">Testimonial</a>
+                    <a href="404.html" class="hover:bg-green-700">404 Page</a>
                 </div>
             </div>
-            <a href="contact.html" class="hover:text-green-600 text-[18px] text-[green]">Contact</a>
+            <a href="contact.html" class="hover:text-green-600 text-[18px]">Contact</a>
         </nav>
             <i class="bi bi-list text-4xl max-[791px]:block min-[792px]:hidden"></i>
        </div>
-        </header> 
-        <div class="w-[85%]  h-[75%] max-md:flex ">
-            <div class="w-full h-full flex max-md:flex-col md:items-center md:justify-between m-auto max-md:py-[40px] max-sm:py-[80px]  items-center justisfy-center ">
-                <div class="hero-txt w-full md:h-full flex items-center justify-start max-md:justify-center">
-                        <h2 class="text-[72px] max-md:text-[60px] flex items-center font-[space Grotesk] font-semibold m-0">
-                        Contact
-                        </h2>
-                </div>
-                <div class="heroxt w-full md:h-full flex items-center justify-end gap-[8px] max-md:justify-center">
-                    <a class="text-[#0D6B68] text-[18px]" href="">Home</a>/
-                    <a class="text-[#0D6B68] text-[18px]" href="">Pages</a>/
-                    <a class="text-[18px]" href="">Contact</a>  
-                </div>
-            </div>
+    </header>
+    <div class="w-[100%] flex py-[90px] max-md:flex-col max-md:items-center">
+
+        <div class="w-[50%] flex justify-end sm:w-[100%]">
+          <div class="w-[88%]">
+              <p class="text-[80px]">Contact</p>
+          </div>
         </div>
+
+        <div class="w-[50%]  flex justify-center sm:w-[100%]">
+              <div class="w-[75%] flex items-center justify-end  ">
+              <p class="text-[16px] text-gray-600 flex gap-2"><span class="text-[#0d6b68]"><a href="index.html">Home</a></span>  / <span class="text-[#0d6b68]"><a href="index.html">Pages</a></span> / <span>Contact</span></p>
+          </div>
+        </div>
+    </div>
+
+
+
+
     </div>
     <section class="w-full h-[100vh] flex items-center justify-center mt-[50px] relative max-md:h-[120vh]">
         <div class="w-[85%] h-full flex justify-center items-center">
