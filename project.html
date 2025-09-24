@@ -6,6 +6,7 @@
   <link href="src/output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
    <style>
         .dropdown{
             display: none;
@@ -21,17 +22,17 @@
  <div class="h-full w-[80%]   border-b-3 border-[white] flex justify-between items-center">
     <a href="index.html" class="logo text-[40px]">iSTUDIO</a>
     <nav class="flex gap-8  max-[891px]:hidden">
-        <a href="" class="hover:text-green-600 text-[18px] font-semibold">Home</a>
-        <a href=""  class="hover:text-green-600 text-[18px] font-semibold">About</a>
-        <a href=""  class="hover:text-green-600 text-[18px] font-semibold">Service</a>
+        <a href="index.html" class="hover:text-green-600 text-[18px] font-semibold">Home</a>
+        <a href="about.html"  class="hover:text-green-600 text-[18px] font-semibold">About</a>
+        <a href="service.html"  class="hover:text-green-600 text-[18px] font-semibold">Service</a>
         <a href="project.html"  class="hover:text-green-600 text-[18px] font-semibold">Projects</a>
         <div class="dropdown-container ">
-            <a href=""  class="hover:text-green-600 text-[18px] font-semibold">Pages <i class="bi bi-chevron-down "></i></a>
+            <a href="feature.html"  class="hover:text-green-600 text-[18px] font-semibold">Pages <i class="bi bi-chevron-down "></i></a>
             <div class="dropdown w-[10%] bg-[rgb(221,233,233)]  flex flex-col  absolute top-12vh z-30 -ml-8 ">
-                <a href="" class="hover:bg-[rgb(13,107,104)] px-3 py-2 w-full ">Features</a>
-                <a href="" class="hover:bg-[rgb(13,107,104)] px-3 py-2 w-full">Our Team</a>
-                <a href="" class="hover:bg-[rgb(13,107,104)] px-3 py-2 w-full">Testimonial</a>
-                <a href="" class="hover:bg-[rgb(13,107,104)] px-3 py-2 w-full">404 Page</a>
+                <a href="feature.html" class="hover:bg-[rgb(13,107,104)] px-3 py-2 w-full ">Features</a>
+                <a href="team.html" class="hover:bg-[rgb(13,107,104)] px-3 py-2 w-full">Our Team</a>
+                <a href="testimonial.html" class="hover:bg-[rgb(13,107,104)] px-3 py-2 w-full">Testimonial</a>
+                <a href="404.html" class="hover:bg-[rgb(13,107,104)] px-3 py-2 w-full">404 Page</a>
             </div>
         </div>
         <a href="" class="hover:text-green-600 text-[18px] font-semibold">Contact</a>
@@ -44,8 +45,8 @@
     <div class="  h-[20vh]  w-[80%] flex  items-center justify-between max-[891px]:flex-col max-[891px]:gap-4 ">
         <h1 class="text-8xl">Projects</h1>
         <nav>
-            <a class="text-green-400" href="">Home </a>/
-            <a class="text-green-400" href="">Pages </a>/
+            <a class="text-green-400" href="index.html">Home </a>/
+            <a class="text-green-400" href="feature.html">Pages </a>/
             <a href="">Projects </a>
         </nav>
     </div>
@@ -54,60 +55,75 @@
   </section>
 
     <!-- projects -->
-   <div class="w-100% h-fit flex items-center justify-center sm:overflow-x-hidden sm:ml-[10%] sm:justify-center sm:my-[10%] md:-ml-[4%] md:w-100% lg:my-[2%]  lg:ml-[3%] ">
-   <div class="projects flex  h-fit  w-[80%] sm:w-[80%] sm:flex-wrap md:w-[80%] lg:flex-nowrap ">
-    <div class="w-[40%] h-[100%] bg-[rgb(13,107,104)] flex flex-col  justify-center sm:h-[20vh] sm:w-[90%] md:h-[25vh]  md:w-157 lg:w-[40%] lg:h-112 ">
-        <h1 class="text-white text-3xl ml-10 pb-15 sm:text-2xl sm:pb-7 sm:ml-5  md:ml-10 md:pb-10  md:text-3xl "> <span class="py-5 sm:py-3 lg:py-5">Our Latest</span> <br>  <span class="text-[rgb(13,107,104)] bg-[rgb(230,240,239)] ">PROJECTS</span></h1>
-        <p class="text-white text-3xl ml-10 sm:text-xl sm:ml-5 md:ml-10   md:text-3xl lg:text-3xl"><span class=" text-6xl pr-2 sm:text-4xl md:text-6xl lg:text-6xl">6</span>of our latest projects</p>
+    <div class="project-flex flex w-full px-[10px] max-w-[1350px] mx-auto max-[990px]:flex-col ">
+                <div class="text w-[40%] max-[990px]:w-[80%] max-[500px]:w-full mx-auto bg-[#0D6B68] text-[#E6F0EF] flex flex-col justify-center pl-[50px]  py-[20px]">
+                    <p class="text-[40px]">our Latest <span class="text-[#0D6B68] bg-[#E6F0EF] px-[5px]">PROJECTS</span></p>
+                    <p class="text-[24px]"><span class="text-[80px]">6</span> of our latest projects</p>
+                </div>
+                <div class="text w-[60%] max-[990px]:w-[80%] mx-auto flex flex-wrap max-[500px]:w-full">
+                    
+                    <div class="latest-img w-[33%]    max-[990px]:w-[50%] max-[990px]:h-[210px] max-[500px]:w-full relative overflow-hidden group cursor-pointer h-[182px] flex items-end max-[500px]:h-[300px]">
+                        <img src="image-project/project-1.jpg" class="absolute w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 pointer-events-none" alt="">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[rgba(44,116,111,0.16)]  to-[rgb(0,10,10)]  "></div>  
+                        <div class="relative z-10 p-[25px] text-white font-[500] ">
+                            <p class="text-[24px]">Kitchen</p>
+                            <p class="text-[14px]">72 Projects</p>
+                        </div>
+ </div>
+                    <div class="latest-img w-[33%] max-[500px]:w-full max-[990px]:w-[50%] max-[990px]:h-[210px] relative overflow-hidden group cursor-pointer h-[182px] flex items-end max-[500px]:h-[300px]">
+                        <img src="image-project/project-2.jpg" class="absolute w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[rgba(44,116,111,0.16)]  to-[rgb(0,10,10)] "></div>  
+                        <div class="relative z-10 p-[25px] text-white font-[500] ">
+                            <p class="text-[24px]">Bathroom</p>
+                            <p class="text-[14px]">67 Projects</p>
+                        </div>
+                    </div>
+                    <div class="latest-img w-[33%] max-[500px]:w-full max-[990px]:w-[50%] max-[990px]:h-[210px] relative overflow-hidden group cursor-pointer h-[182px] flex items-end max-[500px]:h-[300px]">
+                        <img src="image-project/project-3.jpg" class="absolute w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[rgba(44,116,111,0.16)]  to-[rgb(0,10,10)] "></div>  
+                        <div class="relative z-10 p-[25px] text-white font-[500]">
+                            <p class="text-[24px]">Bedroom</p>
+                            <p class="text-[14px]">53 Projects</p>
+                        </div>
+ </div>
+                    <div class="latest-img w-[33%] max-[500px]:w-full max-[990px]:w-[50%] max-[990px]:h-[210px] relative overflow-hidden group max-[500px]:h-[300px] cursor-pointer h-[182px] flex items-end">
+                        <img src="image-project/project-4.jpg" class="absolute w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[rgba(44,116,111,0.16)]  to-[rgb(0,10,10)] "></div>  
+                        <div class="relative z-10  text-white font-[500] p-[25px]">
+                            <p class="text-[24px]">Living Room</p>
+                            <p class="text-[14px]">33 Projects</p>
+                        </div>
+                    </div>
+                    <div class="latest-img max-[500px]:h-[300px] w-[33%] max-[500px]:w-full max-[990px]:w-[50%] max-[990px]:h-[210px] relative overflow-hidden group cursor-pointer h-[182px] flex items-end">
+                        <img src="image-project/project-5.jpg" class="absolute w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[rgba(44,116,111,0.16)]  to-[rgb(0,10,10)] "></div>  
+                        <div class="relative z-10 text-white font-[500] p-[25px]">
+                            <p class="text-[24px]">Furniture</p>
+                            <p class="text-[14px]">87 Projects</p>
+                        </div>
+ </div>
+                    <div class="latest-img max-[500px]:h-[300px] w-[33%] max-[500px]:w-full max-[990px]:w-[50%] max-[990px]:h-[210px] relative overflow-hidden group cursor-pointer h-[182px] flex items-end">
+                        <img src="image-project/project-6.jpg" class="absolute w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[rgba(44,116,111,0.16)]  to-[rgb(0,10,10)] "></div>  
+                        <div class="relative z-10 text-white font-[500] p-[25px]">
+                            <p class="text-[24px]">Rennovation</p>
+                            <p class="text-[14px]">69 Projects</p>
+                        </div>
+                    </div>
+                    
+                </div>
+           
+        </div>
     </div>
 
   
-     <div class="grid-container  grid  grid-cols-3  w-[60%] h-fit sm:justify-center sm:grid-cols-1 md:w-fit md:grid-cols-2  lg:grid-cols-3  ">
-        <div class=" w-54 h-56 overflow-hidden  shadow-lg  sm:h-[50vh] sm:w-[150%] md:h-[35vh] md:w-79 lg:w-54 lg:h-56 ">
-
-            <img src="image-project/project-1.jpg" alt="" class="relative w-[100%] h-[100%] object-cover transform transition duration-500 hover:scale-110">
-            
-      <p class="text-l ml-5 z-20 flex flex-col -mt-17 text-white absolute"> <span class="text-2xl ">Kitchen</span> 72 projects</p>
-        </div>
-        <div class="w-54 h-56  overflow-hidden  shadow-lg  sm:h-[50vh] sm:w-[150%] md:h-[35vh] md:w-78 lg:w-54 lg:h-56 ">
-            <img src="image-project/project-2.jpg" alt="" class="w-[100%] h-[100%] relative transform transition duration-500 hover:scale-110">
-       <p class="text-l ml-5 z-20 flex flex-col -mt-17 text-white absolute"> <span class="text-2xl ">Bathroom</span> 67 projects</p>
-        </div>
-
-        <div class="w-54 h-56  overflow-hidden  shadow-lg sm:h-[50vh] sm:w-[150%] md:h-[35vh] md:w-79 lg:w-54 lg:h-56 ">
-            <img src="image-project/project-3.jpg" alt="" class="w-[100%] h-[100%] relative transform transition duration-500 hover:scale-110">
-      <p class="text-l ml-5 z-20 flex flex-col -mt-17 text-white absolute"> <span class="text-2xl ">Bedroom</span> 53 projects</p>
-        </div>
-
-    
-    
-
-         <div class="w-54 h-56 grid-cols-2 grid-rows-2 overflow-hidden  shadow-lg sm:h-[50vh] sm:w-[150%] md:h-[35vh] md:w-78 lg:w-54 lg:h-56 ">
-            <img src="image-project/project-4.jpg" alt="" class=" w-[100%] h-[100%] object-cover transform transition duration-500 hover:scale-110">
-         <p class="text-l ml-5 z-20 flex flex-col -mt-17 text-white absolute"> <span class="text-2xl ">Living Room</span> 33 projects</p>
-        </div>
-        <div class="w-54 h-56  grid-cols-2 grid-rows-2 overflow-hidden  shadow-lg sm:h-[50vh] sm:w-[150%]  md:h-[35vh] md:w-79 lg:w-54 lg:h-56 ">
-            <img src="image-project/project-5.jpg" alt="" class="w-[100%] h-[100%] relative transform transition duration-500 hover:scale-110">
-        <p class="text-l ml-5 z-20 flex flex-col -mt-17 text-white absolute"> <span class="text-2xl ">Furniture</span> 87 projects</p>
-        </div>
-
-        <div class="w-54 h-56  grid-cols-2 grid-rows-2 overflow-hidden  shadow-lg sm:h-[50vh] sm:w-[150%] md:h-[35vh] md:w-78 lg:w-54 lg:h-56 ">
-            <img src="image-project/project-6.jpg" alt="" class="w-[100%] h-[100%] relative transform transition duration-500 hover:scale-110">
-         <p class="text-l ml-5 z-20 flex flex-col -mt-17 text-white absolute"> <span class="text-2xl ">Rennovation</span> 69 projects</p>
-        </div>
-
-    </div>
-   </div>
-   </div>
-
-  
-  <div class="test h-[80vh] w-[100%] flex justify-center items-center  max-[891px]:flex-col ">
-    <div class="h-[65%]  w-[40%] flex justify-end items-center  max-[991px]:w-[70%] ">
+  <div class="test h-[80vh] w-[100%] flex justify-center items-center  max-[768px]:gap-5 max-[1024px]:flex-col max-[1024px]:my-[5%] ">
+    <div class="h-[65%]  w-[40%] flex justify-end items-center  max-[500px]:h-[50%]  max-[500px]:w-[90%] max-[1024px]:   max-[991px]:w-[50%] ">
         <div class="h-[100%] bg-[rgb(13,107,104)] w-[47%]"></div>
-        <img src="image-project/testimonial-1 (1).jpg" class="h-[80%] -ml-[15%] w-[60%]" alt="">
+        <img src="image-project/testimonial-1 (1).jpg" class="h-[80%]  -ml-[25%] w-[60%]" alt="">
     </div>
 
-    <div class="h-[50%]  w-[40%] flex  flex-col justify-center  max-[891px]:w-[70%]  ">
+    <div class="h-[50%]  w-[40%] flex  flex-col justify-center max-[768px]:w-[70%] max-[768px]:justify-center  ">
       <h1 class="text-4xl pb-2 ml-5">Sustainable Material</h1>
       <p class="ml-5 font-serif">Lorem ipsum dolor sit amet consectetur  adipisicing <br> elit. Eaque, nesciunt blanditiis neque quae <br> ullam obcaecati porro totam nulla alias est?</p>
       <p  class="ml-5 font-serif text-3xl">-Boris Johnson</p>
@@ -120,20 +136,20 @@
   </div>
 
    
-  <div class="w-[100%] h-fit flex justify-center bg-[url(image-project/hero-bg.jpg)] bg-no-repeat bg-cover bg-center mt-10% items-center max-[891px]:flex-col   max-[891px]:gap-5">
-    <div class="w-[40%] h-[55vh]  max-[891px]:w-[70%]">
-        <img src="image-project/newsletter.jpg" class="h-full w-full" alt="">
+  <div class="w-[100%] h-fit flex justify-center bg-[url(image-project/hero-bg.jpg)] bg-no-repeat bg-cover bg-center mt-10% items-center max-[891px]:flex-col max-[1024px]:mt-[7%]  max-[1024px]:gap-5">
+    <div class="w-[40%] h-[55vh]  max-[1024px]:w-[60%] max-[1024px]:h-[50vh] ">
+        <img src="image-project/newsletter.jpg" class="h-full w-full  max-[1024px]:w-[100%] max-[1024px]:h-[100%]" alt="">
     </div>
-    <div class="bg-[url(image-project/hero-bg.jpg)] bg-no-repeat bg-cover bg-center flex flex-col  justify-center  w-[60%] h-[55vh] max-[891px]:w-[80%]  ">
-        <h1 class="text-4xl ml-[10%] pb-15">Subscribe the <span  class="text-[rgb(13,107,104)] bg-white uppercase py-1.5 px-1" >Newsletter</span></h1>
-        <input placeholder="Enter Your Email" class="h-[15%] bg-white ml-[10%] max-[891px]:pb-4 w-[50%]b pl-[20px]" type="text">
+    <div class=" flex flex-col  justify-center  w-[60%] h-[55vh] max-[891px]:w-[80%]  ">
+        <h1 class="text-4xl ml-[10%] flex max-[768px]:gap-5 max-[768px]:flex-col pb-5">Subscribe the <span  class="text-[rgb(13,107,104)] bg-white max-[768px]:my-2 uppercase  min-[768px]:-mt-1 py-2 px-0 w-fit" >Newsletter</span></h1>
+        <input placeholder="Enter Your Email" class="h-[15%] w-[60%] bg-white flex items-center justify-center ml-[10%] max-[768px]:my-2 max-[891px]:pb-4 w-[50%]b pl-[20px]" type="text">
         <p class="text-gray-800 ml-[10%]">Diam sed sed dolor stet amet eirmod</p>
     </div>
   </div>
 
  
   <div class="flex flex-col h-fit w-[100%] bg-[rgb(3,32,31)] items-center justify-center ">
-    <div class="bg-[rgb(3,32,31)] flex flex-wrap  gap-[20px] py-[5%] h-fit w-[80%]">
+    <div class="bg-[rgb(3,32,31)] flex flex-wrap  gap-[20px] py-[5%] h-fit w-[80%] max-[768px]:gap-[5%]">
 
         <div class="w-[23%] h-[35vh] max-[1280px]:w-[40%] max-[868px]:w-[90%] ">
             <h1 class="text-3xl text-white">iSTUDIO</h1>
@@ -170,12 +186,12 @@
             <span  class="text-gray-300 text-l hover:text-xl  hover:text-white">> Landscape Design</span>
         </div>
     </div>
-    <div class=" w-[100%] h-[12vh] flex justify-center items-center ">
+    <div class=" w-[100%] h-fit flex justify-center items-center ">
         <div class="flex justify-between w-[90%] py-3.5 border-t-1 border-[grey] h-fit items-center max-[800px]:flex-col max-[800px]:gap-3">
         <div class="w-[50%] max-[800px]:w-[80%]">
             <span class="text-gray-300">© <u class="hover:text-white">Your Site Name</u>, All Right Reserved. Designed By <u class="hover:text-white">HTML Codex</u>. Distributed by  <u class="hover:text-white">ThemeWagon</u></span>
         </div>
-        <div class="w-[40%] max-[800px]:w-[60%]">
+        <div class="w-[40%] h-fit max-[800px]:w-[60%]">
             <span class=" text-gray-300  border-r-1 px-4 border-[grey]">Home</span><span class=" text-gray-300  border-r-1 px-4 border-[grey] ">Cookies</span><span class=" border-r-1 px-4 border-[grey] text-gray-300 "> Help </span><span class="px-4 text-gray-300 "> FAQs</span>
         </div>
         </div>
