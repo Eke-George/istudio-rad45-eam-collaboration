@@ -9,12 +9,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
      <style>
-        .dropdown{
-            display: none;
-        }
-        .dropdown-container:hover .dropdown{
-            display: block;
-        }
+        .dropdown {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background: #d1d5db; /* gray-300 */
+  padding: 10px 20px;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 999;
+
+  opacity: 0;
+  transform: translateY(10px); /* slide down a bit */
+  pointer-events: none;        /* prevents accidental hover */
+  transition: opacity 0.3s ease, transform 0.5s ease;
+}
+
+.dropdown-container:hover .dropdown {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;        /* clickable again */
+}
         
     </style>
 </head>
@@ -206,4 +221,13 @@
     </div>
 </div>
 </body>
+<script>
+        let drop = document.querySelector(".drop");
+    let menu = document.querySelector(".menu");
+
+    drop.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+      menu.classList.toggle("flex");
+    });
+    </script>
 </html>
