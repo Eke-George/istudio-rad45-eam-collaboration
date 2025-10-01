@@ -284,5 +284,14 @@
 
 
     <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+      <script>
+        let drop = document.querySelector(".drop");
+    let menu = document.querySelector(".menu");
+
+    drop.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+      menu.classList.toggle("flex");
+    });
+    </script>
 </body>
 </html>
