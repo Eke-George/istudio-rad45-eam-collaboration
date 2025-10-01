@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=500, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+     <style>
+        .dropdown{
+            display: none;
+        }
+        .dropdown-container:hover .dropdown{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body class=" ">
+   <div class="w-full  bg-[url('images/our-bg.jpg')] bg-cover bg-center bg-no-repeat">
+        <header class="w-screen h-[98px] text-black  flex justify-center max-w-[90vw] mx-auto px-[10px]">
+       <div class="w-full h-full flex justify-between items-center border-b-2 border-white">
+        
+        <a href="" class="logo text-[40px]">iSTUDIO</a>
+        <nav class=" flex gap-8 max-[791px]:hidden">
+            <a class="hover:text-green-600 text-[18px]" href="index.html">Home</a>
+            <a class="hover:text-green-600 text-[18px]" href="about.html">About</a>
+            <a class="hover:text-green-600 text-[18px]" href="service.html">Service</a>
+            <a class="hover:text-green-600 text-[18px]" href="project.html">Projects</a>
+            <div class="dropdown-container relative">
+                <a href="" class="hover:text-green-600 text-[18px]">Pages <i class="bi bi-chevron-down"></i></a>
+                <div class="dropdown flex-col gap-8 absolute top-8 py-2 bg-gray-300 ml-[-15px] pl-4 pr-8">
+                    <a href="features.html" class="hover:bg-green-700">Features</a>
+                    <a href="team.html" class="hover:bg-green-700">Our Team</a>
+                    <a href="testimonial.html" class="hover:bg-green-700">Testimonial</a>
+                    <a href="404.html" class="hover:bg-green-700">404 Page</a>
+                </div>
+            </div>
+            <a href="contact.html" class="hover:text-green-600 text-[18px]">Contact</a>
+        </nav>
+            <i class="bi bi-list text-4xl max-[791px]:block min-[792px]:hidden"></i>
+       </div>
+    </header>
+    <div class="w-[100%] flex py-[90px] max-md:flex-col max-md:items-center">
+
+        <div class="w-[50%] flex justify-end sm:w-[100%]">
+          <div class="w-[88%]">
+              <p class="text-[80px]">Contact</p>
+          </div>
+        </div>
+
+        <div class="w-[50%]  flex justify-center sm:w-[100%]">
+              <div class="w-[75%] flex items-center justify-end  ">
+              <p class="text-[16px] text-gray-600 flex gap-2"><span class="text-[#0d6b68]"><a href="index.html">Home</a></span>  / <span class="text-[#0d6b68]"><a href="index.html">Pages</a></span> / <span>Contact</span></p>
+          </div>
+        </div>
+    </div>
+
+
+
+
+    </div>
+    <section class="w-full h-[100vh] flex items-center justify-center mt-[50px] relative max-md:h-[120vh]">
+        <div class="w-[85%] h-full flex justify-center items-center">
+            <div class="w-[60%] h-full  flex flex-col gap-2 max-md:w-full">
+                <div class="w-full h-[30%] flex flex-col justify-center items-center gap-[20px]">
+                    <h1 class="text-[40px] font-[space Grotesk] text-[30px] w-full flex justify-center items-center max-md:text-[30px] max-sm:flex-col">Have Any Query? <span class="bg-[#E6F0EF] text-[#0D6B68] px-3 max-md:text-[30px] max-sm:text-[25px] ">CONTACT US</span></h1>
+                    <p class="w-[90%]">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <span class="text-[#0D6B68]"> Download Now.</span></p> 
+                </div>
+                
+                <div class="input-container w-full h-[60%] flex flex-col mt-4 gap-4">
+                    <div class="input-group w-full flex gap-4 max-md:flex-col">
+                        <input class="flex-1 p-4 border-2 outline-[#0D6B68] focus:outline-4" type="text" placeholder="Your Name"></input>
+                        <input class="flex-1 p-4 border-2 outline-[#0D6B68] focus:outline-4" type="email" placeholder="Your Email"></input>
+                    </div>
+                    <div class="input-group w-full flex">
+                        <input class="p-4 border-2 w-full outline-[#0D6B68] focus:outline-4" type="text" placeholder="Subject"></input>
+                    </div>
+                    <div class="input-group w-full flex h-[40%]">
+                        <textarea class="p-4 border-2 w-full outline-[#0D6B68] focus:outline-4" placeholder="Message"></textarea>
+                    </div>
+                    <div class="input-group w-full flex justify-end h-[15%]">
+                    <button class="bg-[#0D6B68] text-white px-6 py-3 hover:bg-[#0B4B4A] w-full">Send Message</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="footter">
+    <div>
+        <div class="cont flex  bg-[url(image/backgroung-image.jpeg)] max-md:flex-col">
+            <div class="footer-img w-[40%] flex justify-center items-center max-[500px]:p-0 max-[1024px]:p-[20px]   max-md:w-full  mx-auto">
+                <img class="my-[20px] w-[100%]" src="image/footer-image.jpeg" alt="">
+            </div>
+            <div class="newsletter max-md:w-full max-md:py-[60px] w-[60%] flex flex-col justify-center pl-[40px] border-2 ">
+                <h2 class="text-[40px] mb-[48px]">Subscribe the <span class="bg-white px-[5px] text-[#0D6B68]">NEWSLETTER</span></h2>
+                <div class="email w-[70%]">
+                    <input type="email"  class="w-full h-[60px] bg-white text-[20px] py-[6px] pl-[24px] pr-[48px] mb-[5px] focus:outline-[4px] outline-[#a1c4c0]" placeholder="Enter Your Email">
+                    <img src="" alt="">
+                </div>
+                <p>Diam sed sed dolor stet amet eirmod</p>
+            </div>
+        </div>
+    </div>
+    <div class="mainfooter w-full bg-[#03201F] pt-[80px]" >
+        <div class="w-full max-w-[1350px] mx-auto pb-[30px]">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-self-center  pb-[50px]">
+
+            <div class="p-[50px]">
+            <h1 class="text-white text-[40px] mb-[30px]">ISTUDIO</h1>
+            <p class="text-[#81908F]">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor</p>
+        </div>
+        <div class=" flex flex-col items-start p-[50px]">
+            <h2 class="text-white text-[20px] mb-[24px]">Get In Touch</h2>
+            <div class="text-[#81908F] mb-[10px]">
+                <img src="" alt="">
+                <p>123 Street, New York, USA</p>
+            </div>
+            <div class="text-[#81908F] mb-[10px]">
+                <img src="" alt="">
+                <p>+012 345 67890</p>
+            </div>
+            <div class="text-[#81908F] mb-[10px]">
+                <img src="" alt="">
+                <p>info@example.com</p>
+            </div>
+            <div class="flex gap-[5px] mb-[10px]">
+                    <div class="border-[2px] border-[#0D6B68] w-[38px] h-[38px] flex items-center justify-center">
+                        <i class="text-[#0D6B68] fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="border-[2px] border-[#0D6B68] w-[38px] h-[38px] flex items-center justify-center">
+                        <i class="text-[#0D6B68] fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="border-[2px] border-[#0D6B68] w-[38px] h-[38px] flex items-center justify-center">
+                        <i class="text-[#0D6B68] fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="border-[2px] border-[#0D6B68] w-[38px] h-[38px] flex items-center justify-center">
+                        <i class="text-[#0D6B68] fa-brands fa-linkedin-in"></i>
+                    </div>
+            </div>
+
+        </div>
+        <div class=" flex flex-col p-[50px]">
+            <h2 class="text-white text-[20px] mb-[24px]">Popular Link</h2>
+            <div class="text-[#81908F] mb-[10px]">
+                <img src="" alt="">
+                <p>About Us</p>
+            </div>
+            <div class="text-[#81908F] mb-[10px]">
+                <img src="" alt="">
+                <p>Contact Us</p>
+            </div>
+            <div class="text-[#81908F] mb-[10px]">
+                <img src="" alt="">
+                <p>Privacy Policy</p>
+            </div>
+            <div class="text-[#81908F] mb-[10px]">
+                <img src="" alt="">
+                <p>Terms & Condition</p>
+            </div>
+            <div class="text-[#81908F] mb-[10px]">
+                <img src="" alt="">
+                <p>Career</p>
+            </div>
+        </div>
+        <div class=" flex flex-col p-[50px]">
+            <h2 class="text-white text-[20px] mb-[24px]">Our Services</h2>
+            <div class="text-[#81908F] mb-[10px]">
+                <img src="" alt="">
+                <p>Interior Design</p>
+            </div>
+            <div class="text-[#81908F] mb-[10px]">
+                <img src="" alt="">
+                <p>Project Planning</p>
+            </div>
+            <div class="text-[#81908F] mb-[10px]">
+                <img src="" alt="">
+                <p>Renovation</p>
+            </div>
+            <div class="text-[#81908F] mb-[10px]">
+                <img src="" alt="">
+                <p>Implement</p>
+            </div>
+            <div class="text-[#81908F] mb-[10px]">
+                <img src="" alt="">
+                <p>Landscape Design</p>
+            </div>
+        </div>
+
+        </div>
+        <hr class="text-[#81908F]">
+        <div class="flex justify-between px-[10px] text-[#81908F] py-[20px] text-[14px] items-center max-md:flex-col gap-[30px]">
+            <p>© Your Site Name, All Right Reserved. Designed By HTML Codex. Distributed by ThemeWagon</p>
+            <div class="flex text-[14px]" >
+                <p class="border-r-[1px] pr-[10px] ">Home</p>
+                <p class="border-r-[1px] px-[10px]">Cookies</p>
+                <p class="border-r-[1px] px-[10px]">Help</p>
+                <p class=" pl-[10px]">FAQs</p>
+            </div>
+        </div>
+        </div>
+        
+        
+    </div>
+</div>
+</body>
+</html>
